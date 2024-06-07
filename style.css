@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cell.star {
+    background-color: yellow;
+  }
